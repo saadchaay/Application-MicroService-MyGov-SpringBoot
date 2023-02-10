@@ -2,14 +2,14 @@ server:
   port: 8081
 spring:
   application:
-    name: Economy and Finance Ministry
+    name: Economy
   datasource:
     password: password
-    url: jdbc:postgresql://localhost:5432/economyMinistry
+    url: jdbc:postgresql://localhost:5000/economyMinistry
     username: postgres
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
